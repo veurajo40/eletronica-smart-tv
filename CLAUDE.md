@@ -1,3 +1,9 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+---
+
 # MazyOS — Sistema operacional do negócio
 
 Sua empresa roda em cima desse arquivo. Aqui ficam as regras de operação
@@ -30,19 +36,58 @@ usar o contexto naturalmente.
 
 ---
 
-## Fluxo de trabalho
+## Skills disponíveis
 
 Antes de executar qualquer tarefa, verificar se existe skill relevante
 em `.claude/skills/`. Se encontrar, seguir as instruções da skill. Se
 não encontrar, executar a tarefa normalmente.
 
+Skills nativas do MazyOS:
+
+| Skill | O que faz | Saída principal |
+|-------|-----------|-----------------|
+| `/instalar` | Entrevista de setup — roda uma vez só | Preenche `_memoria/` + `identidade/` + `CLAUDE.md` |
+| `/abrir` | Carrega contexto no início da sessão | (contexto em memória) |
+| `/salvar` | Commit + push no GitHub | Repositório atualizado |
+| `/atualizar` | Varre projeto e atualiza memória | `_memoria/` + `CLAUDE.md` |
+| `/novo-projeto` | Cria pasta isolada por cliente/iniciativa | Nova estrutura de projeto |
+| `/mapear-rotinas` | Descobre tarefas repetíveis → vira skill | Novo `SKILL.md` |
+| `/carrossel` | Carrosséis 1080×1350 com identidade da marca | `marketing/conteudo/` — HTML + PNGs + legendas |
+| `/publicar-tema` | Tema → artigo de blog + carrossel + 3 legendas | `marketing/conteudo/` |
+| `/seo` | Fluxo completo de 8 passos de SEO | `marketing/seo/01-demanda/` … `08-geo/` |
+| `/responder-avaliacoes` | Respostas humanas pras reviews do Google | `marketing/avaliacoes-google/` (opcional) |
+| `/aprovar-post` | Publica blog + Instagram + Facebook | Deploy Netlify/Vercel + post nas redes |
+| `/anuncio-google` | Campanha Google Ads em CSV | `marketing/campanhas/google-ads-<data>/` |
+| `/relatorio-ads` | Relatório semanal de Google + Meta Ads | `marketing/campanhas/relatorios/` |
+| `/analisar-dados` | Lê CSV/XLSX/PDF → resumo executivo | `saidas/analises/` |
+| `/email-profissional` | Rascunha email a partir de contexto livre | `saidas/emails/` |
+
 Ao concluir uma tarefa que não tinha skill mas parece repetível (o
-usuário provavelmente vai pedir de novo no futuro), perguntar:
+usuário provavelmente vai pedir de novo), perguntar:
 
 > "Isso pode virar uma skill pra próxima vez. Quer que eu crie?"
 
 Não perguntar pra tarefas pontuais ou perguntas simples. Só quando o
 padrão de repetição for claro.
+
+---
+
+## Convenções de saída
+
+- **`marketing/`** — todo conteúdo público (carrosséis, artigos, campanhas, relatórios de ads, respostas a reviews). Versionado no git.
+- **`saidas/`** — documentos internos (análises, emails, rascunhos avulsos). Versionado no git.
+- **`dados/`** — zona de entrada para arquivos a analisar (CSV, XLSX, PDF). Ignorado pelo git; limpar após uso.
+- **`scripts/`** — utilitários Node.js/Python gerados por skills (Playwright, OpenAI API, Meta Graph API). Criados sob demanda.
+
+---
+
+## Fluxo de trabalho
+
+Sessão típica de trabalho:
+
+1. `/abrir` — carrega o contexto do dia
+2. Trabalho com skills ou tarefas livres
+3. `/salvar` — commit + push ao final
 
 ---
 
