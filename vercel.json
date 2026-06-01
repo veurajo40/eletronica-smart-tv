@@ -1,0 +1,5 @@
+{
+  "buildCommand": "cd saidas/site-novo && npm install && npm run build",
+  "outputDirectory": "saidas/site-novo/dist",
+  "installCommand": "cd saidas/site-novo && npm install"
+}
