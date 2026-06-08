@@ -26,4 +26,17 @@ Crescimento digital — construir presença online e gerar leads qualificados na
 
 Triagem automática de chamados fora do escopo — responder e redirecionar clientes com aparelhos em garantia de fábrica ou eletrodomésticos que não sejam TV nem micro-ondas.
 
+## Metas Instagram — @reparo_smarttv
+
+Diagnóstico realizado em maio/2026. Ver `marketing/instagram-diagnostico.md` para análise completa.
+
+**Estado atual (baseline maio/2026):** 475 seguidores | 7 posts | 0 comentários | sem hashtags | sem CTA | bio sem cidades
+
+**Metas:**
+- Curto prazo (junho/2026): bio corrigida + 4 Reels de antes/depois + 1 prova social/semana + hashtags em todos os posts
+- Médio prazo (agosto/2026): 3 posts/semana consistentes + 10 avaliações Google + 2 carrosséis educativos + Destaques criados
+- Longo prazo (novembro/2026): 1.000 seguidores + 10+ leads/mês pelo Instagram
+
+Ao criar qualquer conteúdo para Instagram, usar essas metas como referência de prioridade.
+
 ## Contexto com prazo

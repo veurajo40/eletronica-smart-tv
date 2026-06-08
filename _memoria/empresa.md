@@ -17,6 +17,7 @@
 - **Verônica** — atendimento, agendamentos e laudos técnicos
 
 **Ferramentas:** WhatsApp Business (atendimento principal)
+**Site:** https://eletronica-smart-tv-reparos.vercel.app (Vercel — projeto `eletronica-smart-tv`, repo GitHub `veurajo40/eletronica-smart-tv`)
 **Principais entregas:** Visita técnica com diagnóstico e reparo; laudo técnico quando necessário
 
 ## Modelo de cobrança
@@ -28,3 +29,6 @@ Visita técnica cobrada antecipadamente:
 O valor é abatido do total caso o cliente aprove e feche o serviço.
 
 ## Contexto adicional
+
+**Endereço no Google Ads — NUNCA adicionar:**
+A empresa tem um laboratório físico mas não é aberto ao público. Uma conta anterior foi bloqueada pelo Google por ter endereço cadastrado sem atender os requisitos de estabelecimento comercial acessível ao público. Não usar extensão de localização nem Anúncios de Serviços Locais baseados em endereço. Usar segmentação por raio/cidades no lugar.

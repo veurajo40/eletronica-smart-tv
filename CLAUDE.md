@@ -61,6 +61,7 @@ Skills nativas do MazyOS:
 | `/relatorio-ads` | Relatório semanal de Google + Meta Ads | `marketing/campanhas/relatorios/` |
 | `/analisar-dados` | Lê CSV/XLSX/PDF → resumo executivo | `saidas/analises/` |
 | `/email-profissional` | Rascunha email a partir de contexto livre | `saidas/emails/` |
+| `/nota-servico` | WhatsApp + foto + dados → prompt pronto para Claude for Chrome criar pedido no Agenda Boa | Prompt para Claude for Chrome |
 
 Ao concluir uma tarefa que não tinha skill mas parece repetível (o
 usuário provavelmente vai pedir de novo), perguntar:
